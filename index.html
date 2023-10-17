@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redeus Staff Website | fromdev</title>
+    <style>
+    body2 {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+#rlayout {
+  position: relative;
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  max-width: 600px; /* Aumentei o tamanho para 600px */
+  color: #fff;
+  margin: auto;
+  margin-top: 35vh; 
+}
+
+#rlayout h1 {
+  font-size: 58px;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#rlayout input[type="text"] {
+  box-sizing: border-box;
+  background-color: #333;
+  outline: none;
+  padding: 28px;
+  width: 100%;
+  font-size: 28px;
+  transition: all 0.42s ease;
+  margin-bottom: 40px;
+}
+
+#rlayout button:hover {
+	background-color: #2fc40e;
+}
+
+#rlayout button {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #26ab09;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 38px;
+  cursor: pointe;
+  margin-top: 40px;
+  transition: all 0.42s ease;
+  width: 100%;
+}
+
+/*	
+    
+    
+    
+    from viado
+    
+    
+    
+    
+*/
+    
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #111;
+        font-family: Arial, sans-serif;
+        user-select: none;
+        touch-action: manipulation;
+      }
+
+      #app {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      #app-header {
+        height: 10vh;
+        border-bottom: solid 4px #00b8a9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 4vh;
+        transition: all 0.42s ease;
+      }
+      
+      #app-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        height: 100vh;
+        color: #333;
+        text-align: center;
+      }
+
+      #layout {
+        /*
+        border: solid 2.5px #00b8a9;
+        border-radius: 8px;
+        */
+        padding: 20px;
+      }
+
+      #app-content bbr{background-color: #00b8a9; width: 0 auto; color: #fff;}
+
+      #footer {
+          font-size: 32px;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          text-align: center;
+          color: #cccccc;
+          padding: 10px;
+          margin: 0 auto;
+          border: solid 3px #00b8a9;
+          border-left: none;
+          border-right: none;
+      }
+
+      #app-content h1 {
+        color: #00b8a9;
+        font-size: 38px;
+        margin-bottom: 20px;
+      }
+
+      #creditos-button {
+        font-size: 32px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #cccccc;
+      }
+
+      #fundo {
+      background-color: #00b8a9;
+      }
+
+      #creditos-button discord:hover,
+      #creditos-button whatsapp:hover,
+      #creditos-button canal:hover {
+      transition: all 0.42s ease;
+      transform: translateX(10px);
+      padding-left: 10px;
+      }
+
+      #creditos-button discord:hover {
+        color: #002eb8;
+        border-left: solid 5.2px #002eb8;
+      }
+      #creditos-button whatsapp:hover {
+        color: #09b800;
+        border-left: solid 5.2px #09b800;
+      }
+      #creditos-button canal:hover {
+        color: #b80000;
+        border-left: solid 5.2px #b80000;
+      }
+
+      #app-content p {
+        color: #cccccc;
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      @keyframes go-back {
+        from {
+          transform: translateX(100px);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .inicio {
+        display: none;
+      }
+
+      .ll {
+        display: none;
+      }
+      
+      .login {
+        display: none;
+      }
+
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: all 0.42s ease;
+      }
+
+
+      .loader {
+        width: 120px;
+        height: 120px;
+        size: 100px;
+        border-width: 3px;
+        border-style: dashed solid solid dotted;
+        border-color: #00b8a9 #00b8a9 transparent #00b8a9;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        animation: load 1s linear infinite;
+        filter: brightness(1.2) saturate(1);
+      }
+
+      .loader::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 50px;
+        top: 77.5px;
+        border-right-color: #00b8a9;
+        transform: rotate(-40deg);
+      }
+
+      @keyframes load {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      #app-footer {
+        display: flex;
+        justify-content: center;
+        padding: 2vh;
+        font-size: 20px;
+      }
+
+      @media (max-width: 768px) {
+        #app-header {
+          height: 60px;
+          font-size: 16px;
+        }
+
+        #app-content {
+          padding: 20px;
+        }
+      }
+
+      #loading-screen.visible {
+        display: flex;
+      }
+
+      #loading-screen.visible .loader {
+        margin: auto;
+      }
+      
+      @viewport {
+        zoom: 1.0;
+        width: device-width;
+      }
+      
+      .bar-container {
+        display: flex;
+        height: 100px;
+        width: 20px;
+        justify-content: flex-end;
+      }
+
+      .bar {
+        width: 4px;
+        height: 20px;
+        background-color: #000;
+        margin: 4px;
+      }
+    </style><script>
+      function login() {
+        var password = document.getElementById('password').value;
+        if(password === 'redeus23') {
+          load('login');
+        }
+      }
+      function load(from) {
+        var loadingScreen =
+  document.getElementById('loading-screen');
+        if (from === 'login') {
+          loadingScreen.style.display = 'flex'
+          document.getElementById('login').style.display = 'none';
+          setTimeout(() => {    
+            loadingScreen.style.display = 'none'
+            document.getElementById('inicio').style.display = 'block';
+          }, 1200);
+        }
+        if (from === 'inicio') {
+          loadingScreen.style.display = 'none'
+            document.getElementById('login').style.display = 'none';
+          document.getElementById('inicio').style.display = 'block'; 
+        } else {
+          loadingScreen.style.display = 'none'
+          document.getElementById('inicio').style.display = 'none';
+          document.getElementById('login').style.display = 'block';
+        }
+      }
+
+      setTimeout(() => {
+        load('inicioh');
+      }, 1200);
+    </script>
+  </head>
+<body2>
+  <div id="login">
+      <div id="rlayout">
+        <h1>Login</h1>
+        <input type="text" id="password" placeholder="Senha" style="color: #fff;border:none;" maxlength="10" autocomplete="new-password">
+        <button onclick="login()">Entrar</button>
+    </div>
+  </div>
+</body2>
+  <body>
+    <div id="loading-screen">
+      <span class="loader"></span>
+    </div>
+    <div id="inicio">
+      <div id="app">
+        <div id="app-header">
+          <div class="bar-container">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          Redeus Staff
+        </div>
+        <div id="app-content">
+          <div id="layout">
+            <h1>Créditos</h1>
+            <p>Site inteiramente feito por <b>From</b></p>
+            <div id="creditos-button">
+            <discord>
+            Discord
+            </discord>
+            <whatsapp>
+            Whatsapp
+            </whatsapp>
+            <canal>
+            Canal
+            </canal>
+          </div>
+            <h1>Sobre</h1>
+            <p>O site foi desenvolvido exclusivamente para os membros da equipe Redeus, com o objetivo de fornecer informações detalhadas e estatísticas sobre a equipe e seus membros.</p>
+            <h1>Nota</h1>
+            <p>É estritamente proibida qualquer forma de divulgação deste site para usuários ou jogadores que não sejam membros de nossa equipe. Todas as informações contidas neste site <b><bbr>são confidenciais e destinadas apenas aos membros autorizados.</bbr></b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
